@@ -1,0 +1,93 @@
+:root {
+  /* Colors variables */
+  --color-background: #06090f;
+  --color-background-light: #0d1117;
+  --color-border: #30363d;
+  --color-link: #4987cf;
+  --color-text: #c2cad2;
+  /* Fonts variabeles */
+  --font-global: "Roboto Mono", monospace;
+  --font-text-md: 1rem;
+  --font-text-sm: 0.7rem;
+  --font-title-sx: 3rem;
+  /* Modules variables sizes */
+  --global-md-module-size: 1rem;
+  --global-sm-module-size: 0.5rem;
+  --global-sx-module-size: 2rem;
+  /* Border default variables */
+  --global-border: 1px solid #30363d;
+  --global-radius: var(var(--global-sm-module-size));
+}
+
+/* GERAL STYLES ====== */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  gap: var(--global-md-module-size);
+  place-items: center;
+}
+
+header {
+  margin-top: var(--global-sx-module-size);
+}
+
+h1 {
+  font-size: 3rem;
+  font-size: var(--font-title-sx);
+}
+
+main {
+  min-height: 22.5rem;
+  padding: var(--global-md-module-size);
+}
+
+main p {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+small {
+  font-size: var(--font-text-sm);
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CONFIGURAÇÃO DE MÓDULOS ==== */
+.c-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-flex-column__around {
+  justify-content: space-around;
+}
+
+/* CLASSES GLOBAIS E REUTILIZÁVEIS ==== */
+.c-font {
+  font-family: var(--font-global);
+  font-size: var(--font-text-md);
+}
+
+.c-border {
+  border-radius: var(--global-radius);
+  border: var(--global-border);
+}
+
+/* CONFIGURAÇÃO DE TEMAS ===== */
+.t-black {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.t-black-light {
+  background-color: var(--color-background-light);
+}

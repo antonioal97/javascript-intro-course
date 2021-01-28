@@ -1,0 +1,11 @@
+img {
+  background-color: var(--color-background);
+  border-radius: 50%;
+  border: var(--global-border);
+  height: 16rem;
+  max-width: 100%;
+  width: 16rem;
+}
+.res {
+  align-items: center;
+}
